@@ -1,0 +1,35 @@
+FUNCTION palindrom(word :STRING[10]) : BOOLEAN
+VAR
+    i:INTEGER
+    pal:STRING
+BEGIN
+d
+  IF (word.length <= 1) THEN
+    RETURN pal:=FALSE
+    ELSE IF
+   ( word[i]=word[i-1] && word.length>1) THEN
+  RETURN  pal:=TRUE;
+  END_IF
+
+END
+
+
+
+
+
+
+ALGORITHM recursion_palindrom
+VAR
+    word :STRING[10];
+    i:INTEGER
+    pal:BOOLEAN
+BEGIN
+ Write("enter word:(max length 10)")
+    Read(word[i])
+
+    pal:=palindrom(word :STRING[10]);
+
+    Write("is the word palindromic:",pal)
+
+
+END
